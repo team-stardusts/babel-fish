@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { HashRouter, Route } from "react-router-dom";
 import Navigation from "./component/Navigation";
 // PAGES ================================================/
 import Home from "./routes/Home";
@@ -11,14 +11,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Navigation />
-            <Switch>
-                <Route path={router.home} exact={true} component={Home} />
-                <Route path={router.tutoring} component={Tutoring} />
-                <Route path={router.trip} component={Trip} />
-            </Switch>
-        </BrowserRouter>
+
+            <Route path={router.home} exact={true} component={Home} />
+            <Route path={router.tutoring} component={Tutoring} />
+            <Route path={router.trip} component={Trip} />
+        </HashRouter>
     );
 }
 
