@@ -1,18 +1,40 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Nav, Navbar, Container } from "react-bootstrap";
 import router from "../routes/router";
+
+const linkStyle = {
+    "text-decoration": "none",
+    color: "#2e3131",
+};
 
 function Navigation() {
     return (
         <Navbar bg="light" variant="light">
             <Container className="justify-content-between">
                 <Navbar.Brand>
-                    <Nav.Link href={router.home}>StarDust</Nav.Link>
+                    <Nav.Link>
+                        <Link to={router.home} style={linkStyle}>
+                            StarDust
+                        </Link>
+                    </Nav.Link>
                 </Navbar.Brand>
                 <Nav className="justify-content-end">
-                    <Nav.Link href={router.home}>Home</Nav.Link>
-                    <Nav.Link href={router.tutoring}>Tutoring</Nav.Link>
-                    <Nav.Link href={router.trip}>Trip</Nav.Link>
+                    <Nav.Link>
+                        <Link to={router.home} style={linkStyle}>
+                            Home
+                        </Link>
+                    </Nav.Link>
+                    <Nav.Link>
+                        <Link to={router.tutoring} style={linkStyle}>
+                            Tutoring
+                        </Link>
+                    </Nav.Link>
+                    <Nav.Link>
+                        <Link to={router.trip} style={linkStyle}>
+                            Trip
+                        </Link>
+                    </Nav.Link>
                 </Nav>
             </Container>
         </Navbar>
