@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Badge } from "react-bootstrap";
+import { Container, Badge } from "react-bootstrap";
 
 const fontStyle = {
     fontFamily:

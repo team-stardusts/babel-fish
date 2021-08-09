@@ -13,12 +13,12 @@ function Home() {
                 <Col></Col>
             </Row>
             <Row>
-                <Container class="d-flex justify-content-around">
+                <div class="d-flex justify-content-around">
                     <IntroCard />
                     <IntroCard />
                     <IntroCard />
                     <IntroCard />
-                </Container>
+                </div>
             </Row>
         </Container>
     );
