@@ -4,14 +4,14 @@ import { Nav, Navbar, Container } from "react-bootstrap";
 import router from "../routes/router";
 
 const linkStyle = {
-    "text-decoration": "none",
+    textDecoration: "none",
     color: "#2e3131",
 };
 
 function Navigation() {
     return (
         <Navbar bg="light" variant="light">
-            <Container className="justify-content-between">
+            <Container>
                 <Navbar.Brand>
                     <Nav.Link>
                         <Link to={router.home} style={linkStyle}>
