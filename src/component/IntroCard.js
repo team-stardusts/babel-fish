@@ -1,18 +1,21 @@
 import React from "react";
-import { Card, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import { Card, Button, Col } from "react-bootstrap";
 
-function IntroCard() {
+function IntroCard({ route, title, description }) {
     return (
-        <div>
-            <Card style={{ width: "18rem" }}>
+        <Col>
+            <Card>
                 <Card.Img variant="top" src="" />
                 <Card.Body>
-                    <Card.Title>Something</Card.Title>
-                    <Card.Text>Something</Card.Text>
-                    <Button variant="primary">Go!</Button>
+                    <Card.Title>{title}</Card.Title>
+                    <Card.Text>{description.slice(0, 28)}...</Card.Text>
+                    <Link to={route}>
+                        <Button variant="primary">Go!</Button>
+                    </Link>
                 </Card.Body>
             </Card>
-        </div>
+        </Col>
     );
 }
 

@@ -8,7 +8,8 @@ const fontStyle = {
 
 function Greeting() {
     return (
-        <Container
+        <div
+            className="text-center"
             style={{
                 fontFamily: fontStyle.fontFamily,
                 marginTop: "30px",
@@ -28,7 +29,7 @@ function Greeting() {
                     in a very attractive way.
                 </span>
             </p>
-        </Container>
+        </div>
     );
 }
 

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Nav, Navbar, Container } from "react-bootstrap";
-import router from "../routes/router";
+import routes from "../routes/router";
 
 const linkStyle = {
     textDecoration: "none",
@@ -14,24 +14,24 @@ function Navigation() {
             <Container>
                 <Navbar.Brand>
                     <Nav.Link>
-                        <Link to={router.home} style={linkStyle}>
+                        <Link to={routes.home} style={linkStyle}>
                             StarDust
                         </Link>
                     </Nav.Link>
                 </Navbar.Brand>
                 <Nav className="justify-content-end">
                     <Nav.Link>
-                        <Link to={router.home} style={linkStyle}>
+                        <Link to={routes.home} style={linkStyle}>
                             Home
                         </Link>
                     </Nav.Link>
                     <Nav.Link>
-                        <Link to={router.tutoring} style={linkStyle}>
+                        <Link to={routes.tutoring} style={linkStyle}>
                             Tutoring
                         </Link>
                     </Nav.Link>
                     <Nav.Link>
-                        <Link to={router.trip} style={linkStyle}>
+                        <Link to={routes.trip} style={linkStyle}>
                             Trip
                         </Link>
                     </Nav.Link>

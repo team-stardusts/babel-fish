@@ -1,11 +1,15 @@
 const HOME = "/";
 const TUTORING = "/tutoring";
 const TRIP = "/trip";
+const SUPPORT = "/support";
+const INTERESTINGS = "/interestings";
 
-const router = {
+const routes = {
     home: HOME,
     tutoring: TUTORING,
     trip: TRIP,
+    support: SUPPORT,
+    interestings: INTERESTINGS,
 };
 
-export default router;
+export default routes;
