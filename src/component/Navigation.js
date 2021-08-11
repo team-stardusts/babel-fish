@@ -5,12 +5,17 @@ import routes from "../routes/router";
 
 const linkStyle = {
     textDecoration: "none",
-    color: "#2e3131",
+    color: "white",
+    fontWeight: "bold",
 };
 
 function Navigation() {
     return (
-        <Navbar bg="light" variant="light">
+        <Navbar
+            bg="grey"
+            variant="light"
+            style={{ backgroundColor: "#5c97bf" }}
+        >
             <Container>
                 <Navbar.Brand>
                     <Nav.Link>

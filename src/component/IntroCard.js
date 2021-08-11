@@ -2,14 +2,25 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Card, Button, Col } from "react-bootstrap";
 
-function IntroCard({ route, title, description }) {
+function IntroCard({ route, image, title, description }) {
     return (
         <Col>
-            <Card>
-                <Card.Img variant="top" src="" />
-                <Card.Body>
+            <Card
+                className="shadow bg-body rounded"
+                style={{ maxWidth: 240, marginBottom: 10 }}
+            >
+                <Card.Img
+                    class="img-responsive"
+                    variant="top"
+                    src={image}
+                    xs={3}
+                    style={{ width: "auto", height: 150 }}
+                />
+                <Card.Body className="text-center">
                     <Card.Title>{title}</Card.Title>
-                    <Card.Text>{description.slice(0, 28)}...</Card.Text>
+                    <Card.Text className="text-start">
+                        {description.slice(0, 28)}...
+                    </Card.Text>
                     <Link to={route}>
                         <Button variant="primary">Go!</Button>
                     </Link>

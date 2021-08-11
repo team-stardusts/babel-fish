@@ -15,20 +15,24 @@ function Greeting() {
                 marginTop: "30px",
             }}
         >
-            <h2>
-                Wellcome to <Badge bg="primary">StarDust</Badge>
-            </h2>
-            <h2>Take some time to get</h2>
-            <h2>to know about Korea!</h2>
-            <p>
-                Find someone who is your teacher.
-                <br />
-                He or She will introduce Korea to you
-                <br />
-                <span style={{ color: "#1f3a93" }}>
-                    in a very attractive way.
-                </span>
-            </p>
+            <div>
+                <h1>
+                    Wellcome to <Badge bg="primary">StarDust</Badge>
+                </h1>
+                <h1>Take some time to get</h1>
+                <h1>to know about Korea!</h1>
+            </div>
+            <div>
+                <h6 style={{ fontWeight: "normal" }}>
+                    Find someone who will be your teacher.
+                    <br />
+                    He or She will introduce Korea to you
+                    <br />
+                    <span style={{ color: "#1f3a93" }}>
+                        in a very attractive way.
+                    </span>
+                </h6>
+            </div>
         </div>
     );
 }

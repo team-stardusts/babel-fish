@@ -1,5 +1,6 @@
 import React from "react";
 import { HashRouter, Route } from "react-router-dom";
+import Header from "./component/Header";
 import Navigation from "./component/Navigation";
 // PAGES ================================================/
 import Home from "./routes/Home";
@@ -13,7 +14,6 @@ function App() {
     return (
         <HashRouter>
             <Navigation />
-
             <Route path={router.home} exact={true} component={Home} />
             <Route path={router.tutoring} component={Tutoring} />
             <Route path={router.trip} component={Trip} />
