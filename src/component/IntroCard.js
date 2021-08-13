@@ -10,7 +10,7 @@ function IntroCard({ route, image, title, description }) {
                 style={{ maxWidth: 240, marginBottom: 10 }}
             >
                 <Card.Img
-                    class="img-responsive"
+                    className="img-responsive"
                     variant="top"
                     src={image}
                     xs={3}

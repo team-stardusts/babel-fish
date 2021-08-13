@@ -1,6 +1,8 @@
 import React from "react";
+import tutors from "./tutors";
 
-function Tutoring() {
+function TutorList() {
+    console.log(tutors);
     return (
         <div className="d-flex justify-content-center">
             <h2>Hello Tutoring!</h2>
@@ -8,4 +10,4 @@ function Tutoring() {
     );
 }
 
-export default Tutoring;
+export default TutorList;
