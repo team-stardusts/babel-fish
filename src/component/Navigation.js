@@ -12,6 +12,7 @@ const linkStyle = {
 function Navigation() {
     return (
         <Navbar
+            className="sticky-top"
             bg="grey"
             variant="light"
             style={{ backgroundColor: "#5c97bf" }}
