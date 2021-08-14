@@ -22,8 +22,8 @@ function TutorCard({ match, tutor }) {
     } = tutor;
 
     return (
-        <Col style={{ minWidth: 540 }}>
-            <Card className="shadow bg-body rounded" style={{ maxWidth: 540 }}>
+        <Col>
+            <Card className="shadow bg-body rounded">
                 <Row className="g-0">
                     <Col xs={4} md={4} className="position-relative">
                         <Card.Img
@@ -39,7 +39,7 @@ function TutorCard({ match, tutor }) {
                     </Col>
                     <Col xs={8} md={8}>
                         <Row>
-                            <Col className="g-0" xs={7} md={7}>
+                            <Col className="g-0" md={7}>
                                 <Card.Body
                                     className="d-grid gap-0"
                                     style={{ marginLeft: 10 }}
@@ -78,11 +78,13 @@ function TutorCard({ match, tutor }) {
                                         {degree.graduateSchool}
                                     </Card.Text>
                                     <Card.Text className="mt-1 p-0">
-                                        {intro}
+                                        {intro.slice(0, 30)}
+                                        {console.log(intro.length)}
+                                        {intro.length > 30 ? "..." : ""}
                                     </Card.Text>
                                 </Card.Body>
                             </Col>
-                            <Col xs={5} md={5}>
+                            <Col md={5}>
                                 <Card.Body>
                                     <Card.Text className="m-0 p-0">
                                         <b>{cost.oneHour}</b> KRW <br />
