@@ -1,5 +1,6 @@
 import React from "react";
 import { HashRouter, Link, Route } from "react-router-dom";
+import TutorDetail from "./TutorDetail";
 import TutorList from "./TutorList";
 
 function Tutoring(props) {
@@ -10,6 +11,7 @@ function Tutoring(props) {
     return (
         <HashRouter>
             <Route path={path} exact={true} component={TutorList} />
+            <Route path={`${path}/:id`} exact={true} component={TutorDetail} />
         </HashRouter>
     );
 }
