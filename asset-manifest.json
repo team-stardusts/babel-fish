@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.js": "/business-temp/static/js/main.c776e0b1.chunk.js",
-    "main.js.map": "/business-temp/static/js/main.c776e0b1.chunk.js.map",
-    "runtime-main.js": "/business-temp/static/js/runtime-main.98b7e383.js",
-    "runtime-main.js.map": "/business-temp/static/js/runtime-main.98b7e383.js.map",
-    "static/css/2.da1eef19.chunk.css": "/business-temp/static/css/2.da1eef19.chunk.css",
-    "static/js/2.23a716af.chunk.js": "/business-temp/static/js/2.23a716af.chunk.js",
-    "static/js/2.23a716af.chunk.js.map": "/business-temp/static/js/2.23a716af.chunk.js.map",
-    "index.html": "/business-temp/index.html",
-    "static/css/2.da1eef19.chunk.css.map": "/business-temp/static/css/2.da1eef19.chunk.css.map",
-    "static/js/2.23a716af.chunk.js.LICENSE.txt": "/business-temp/static/js/2.23a716af.chunk.js.LICENSE.txt"
+    "main.js": "/babel-fish/static/js/main.c776e0b1.chunk.js",
+    "main.js.map": "/babel-fish/static/js/main.c776e0b1.chunk.js.map",
+    "runtime-main.js": "/babel-fish/static/js/runtime-main.af8abb85.js",
+    "runtime-main.js.map": "/babel-fish/static/js/runtime-main.af8abb85.js.map",
+    "static/css/2.da1eef19.chunk.css": "/babel-fish/static/css/2.da1eef19.chunk.css",
+    "static/js/2.49e8cd20.chunk.js": "/babel-fish/static/js/2.49e8cd20.chunk.js",
+    "static/js/2.49e8cd20.chunk.js.map": "/babel-fish/static/js/2.49e8cd20.chunk.js.map",
+    "index.html": "/babel-fish/index.html",
+    "static/css/2.da1eef19.chunk.css.map": "/babel-fish/static/css/2.da1eef19.chunk.css.map",
+    "static/js/2.49e8cd20.chunk.js.LICENSE.txt": "/babel-fish/static/js/2.49e8cd20.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.98b7e383.js",
+    "static/js/runtime-main.af8abb85.js",
     "static/css/2.da1eef19.chunk.css",
-    "static/js/2.23a716af.chunk.js",
+    "static/js/2.49e8cd20.chunk.js",
     "static/js/main.c776e0b1.chunk.js"
   ]
 }
