@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Card, Container, Row, Col, Button, Badge } from "react-bootstrap";
+import { Card, Row, Col, Button, Badge } from "react-bootstrap";
 
 function TutorCard({ match, tutor }) {
     const { path } = match;
@@ -79,7 +79,6 @@ function TutorCard({ match, tutor }) {
                                     </Card.Text>
                                     <Card.Text className="mt-1 p-0">
                                         {intro.slice(0, 30)}
-                                        {console.log(intro.length)}
                                         {intro.length > 30 ? "..." : ""}
                                     </Card.Text>
                                 </Card.Body>
@@ -96,7 +95,7 @@ function TutorCard({ match, tutor }) {
                                     <Link to={`${path}/${id}`}>
                                         <Button
                                             className="mt-5 w-100"
-                                            variant="primary"
+                                            variant="outline-primary"
                                         >
                                             Detail
                                         </Button>
@@ -104,9 +103,9 @@ function TutorCard({ match, tutor }) {
                                     <Link to={`${path}/${id}`}>
                                         <Button
                                             className="mt-1 w-100"
-                                            variant="primary"
+                                            variant="outline-primary"
                                         >
-                                            Book
+                                            Book!
                                         </Button>
                                     </Link>
                                 </Card.Body>
