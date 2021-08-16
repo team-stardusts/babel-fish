@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Badge } from "react-bootstrap";
+import { Badge } from "react-bootstrap";
 
 const fontStyle = {
     fontFamily:
@@ -17,7 +17,10 @@ function Greeting() {
         >
             <div>
                 <h1>
-                    Wellcome to <Badge bg="primary">StarDust</Badge>
+                    Wellcome to{" "}
+                    <Badge bg="light" text="dark">
+                        StarDust
+                    </Badge>
                 </h1>
                 <h1>Take some time to get</h1>
                 <h1>to know about Korea!</h1>
